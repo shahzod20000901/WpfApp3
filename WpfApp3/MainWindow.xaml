@@ -6,7 +6,39 @@
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Label x:Name="Label_Title" Width="400" Height="50"  
+               Content="Введите своё имя: "
+               FontSize="30"
+               Foreground="Blue"    
+        />
+        
+        <TextBox x:Name="Input_Name" 
+                 Foreground="Blue"
+                 FontSize="25"
+        /> 
+        
+        <Button x:Name="Save" Width="200" Height="80" Click="Save_OnClick"
+                Content = "Сохранить "
+                FontSize="30"
+                Foreground="Brown"
+        />
+        
+        <Label x:Name="Label_output" Width="1000" Height="50"  
+               
+               FontSize="30"
+               Foreground="Blue"    
+        />
+        
+        <Button x:Name="Reset" Width="200" Height="80" Click="Reset_OnClick_OnClick"
+                Content = "Сбросить"
+                FontSize="30"
+                Foreground="Brown"
+        />
+        
+        
+        
+        
+            
+    </StackPanel>
 </Window>

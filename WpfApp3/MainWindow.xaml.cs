@@ -24,5 +24,16 @@ namespace WpfApp3
         {
             InitializeComponent();
         }
+        private void Save_OnClick(object sender, RoutedEventArgs e)
+        {
+            var name = Input_Name.Text;
+                Label_output.Content=$"Вы ввели своё имя - {name}";
+        }
+
+        private void Reset_OnClick_OnClick(object sender, RoutedEventArgs e)
+        {
+           Input_Name.Clear();
+           Label_output.Content = "";
+        }
     }
 }
